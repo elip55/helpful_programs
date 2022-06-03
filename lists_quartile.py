@@ -25,6 +25,6 @@ def values(mylist):
     print(f'The Upper Outlier Boundary is: {upper_outlier}')
     
     
-mylist = [45,28,13,63,15,38,19,40,41,24,25,9,28,14,17,39,21,22,42,4,46,54,31,36]
+mylist = [2,1,7,2,2,19,18,6,4,58,9,4,20,2,1,3,2,4,1,2,8,10,5,15]
 print(sorted(mylist)) # for now, its how we find the median
 values(mylist)

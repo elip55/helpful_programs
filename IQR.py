@@ -9,7 +9,7 @@ def iqr(q1, q2, q3):
     print(f'The Lower Outlier Boundary is: {lower_outlier}')
     print(f'The Upper Outlier Boundary is: {upper_outlier}')
 
-q1 = 105
-q2 = 106
+q1 = 19
+q2 = 43
 q3 = 120
 iqr(q1, q2, q3)
