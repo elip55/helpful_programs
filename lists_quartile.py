@@ -1,8 +1,7 @@
-import math
-
 
 import math
 
+# this only works with whole numbers
 
 def values(mylist):
     
@@ -25,6 +24,5 @@ def values(mylist):
     print(f'The Upper Outlier Boundary is: {upper_outlier}')
     
     
-mylist = [2,1,7,2,2,19,18,6,4,58,9,4,20,2,1,3,2,4,1,2,8,10,5,15]
-print(sorted(mylist)) # for now, its how we find the median
-values(mylist)
+sea = [.6,1.3,2.5,1.5,1.1,1.1,2.2,.6,1.5,1.5,1.2,1.6,2.1,6.6,4,2.5,1.4,1.4,1.8,1.6,3.7,.6,2.7,2.6,3,1.2,1,1.6,3.1,2.4]
+high = [4.7,1.9,9.1,837,9.5,2.7,9.2,7.3,2.1,6.3,6.5,6.3,2,5.9,5.6,5.6,1.5,6.5,5.3,5.6,2.1,1.1,3.3,1.8,7.6,8.9,4.4,3.6,4.4,3.8]
