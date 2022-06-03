@@ -1,5 +1,6 @@
 import math
 
+# just a pracitce file, you can find most of what you need on lists_quartile
 
 def percentile(thislist, p):
     
