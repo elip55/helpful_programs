@@ -20,8 +20,8 @@ def calc(numbers):
     print(f'standard deviation: {standard_deviation}')
 
 
-def correlation_coeficient(x, y):
-    """This function finds the correleation coeficient through input lists"""
+def correlation_coefficient_and_equation(x, y):
+    """This function finds the correleation coeficient and regression line through input lists"""
     denom = len(x) # this shouldn't matter as all lists should be equal
     mean_x = sum(x)/len(x)
     lx1 = []
@@ -54,23 +54,15 @@ def correlation_coeficient(x, y):
         final_sum_list.append(sum_values)
     final_sum = sum(final_sum_list)
     r = final_sum/(denom-1)
-    print(f'The correleation coefficient is: {r}')
+    b1 = r*(sy/sx)
+    b0 = mean_y - (b1*mean_x)
+    print(f'The correleation coefficient is: {r}\n')
+    print(f'The regression line equation is: {round(b0,5)} + {round(b1,5)}x')
+
+def opposite_regression_equation(mean_x, mean_y, sx, sy, r):
+    """When given the variables, this will output the regression line equation"""
+    b1 = r*(sy/sx)
+    b0 = mean_y - (b1*mean_x)
+    print(f'The regression line equation is: {round(b0,5)} + {round(b1,5)}x')
     
-    
-x = [
-247,
-124,
-95,
-18,
-2]
-
-y = [
-232,
-146,
-128,
-23,
-2]
-
-correlation_coeficient(x, y)
-
-
+# NOTE:  Must input lists, values and call functions here
