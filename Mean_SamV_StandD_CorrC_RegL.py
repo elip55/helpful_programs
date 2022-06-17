@@ -72,7 +72,3 @@ def opposite_regression_equation(mean_x, mean_y, sx, sy, r):
     print(f'The regression line equation is: {round(b0,5)} + {round(b1,5)}x')
     
 # NOTE:  Must input lists, values and call functions here
-
-
-v = [15,5,17,6,24,22]
-calc(v)
