@@ -20,6 +20,9 @@ def area_calc_zeros(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def area_calc_ones(x):
@@ -33,6 +36,9 @@ def area_calc_ones(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def area_calc_twos(x):
@@ -46,6 +52,9 @@ def area_calc_twos(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def area_calc_threes(x):
@@ -59,6 +68,9 @@ def area_calc_threes(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def area_calc_fours(x):
@@ -72,6 +84,9 @@ def area_calc_fours(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 
@@ -86,6 +101,9 @@ def area_calc_fives(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 
@@ -100,6 +118,9 @@ def area_calc_sixes(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def area_calc_sevens(x):
@@ -113,6 +134,9 @@ def area_calc_sevens(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def area_calc_eights(x):
@@ -126,6 +150,9 @@ def area_calc_eights(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def area_calc_nines(x):
@@ -139,6 +166,9 @@ def area_calc_nines(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def neg_a0(x):
@@ -152,6 +182,9 @@ def neg_a0(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def neg_a1(x):
@@ -165,6 +198,9 @@ def neg_a1(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def neg_a2(x):
@@ -178,6 +214,9 @@ def neg_a2(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def neg_a3(x):
@@ -192,6 +231,9 @@ def neg_a3(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def neg_a4(x):
@@ -205,6 +247,9 @@ def neg_a4(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 
@@ -219,6 +264,9 @@ def neg_a5(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 """NOTE:  here stars negatives"""
@@ -233,6 +281,9 @@ def neg_a6(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def neg_a7(x):
@@ -246,6 +297,9 @@ def neg_a7(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def neg_a8(x):
@@ -259,6 +313,9 @@ def neg_a8(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
 
 def neg_a9(x):
@@ -272,11 +329,10 @@ def neg_a9(x):
             v = j
         else:
             pass
+    v2 = 1-v
+    print(f'The area to the left of {x} is: {v}')
+    print(f'The area to the right of {x} is: {v2}')
     return v
-
-
-
-
 
 
 """NOTE:  VERY IMPORTANT.  Remember that these functions return values LEFT OF the desired point.
