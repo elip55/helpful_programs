@@ -1,3 +1,8 @@
+
+
+
+
+
 ticker = 0.0
 z_column = [ticker]
 for i in range(49):
@@ -7,7 +12,9 @@ for i in range(49):
     
     
     
-"""NOTE:  VERY IMPORTANT!!!!!!!  calc_'n' refers to the hundredths place columns. So, calc_zeros = .00, calc_ones = .01,  calc_twos = .02, and so on.  So, simply input the number UP TO the hundredths place number, call the function of the hundredthc place column, and it will return your value."""
+"""NOTE:  VERY IMPORTANT!!!!!!!  calc_n refers to the hundredths place columns. 
+    So, calc_zeros = .00, calc_ones = .01,  calc_twos = .02, and so on.  
+    So, simply input the number UP TO the hundredths place number, call the function of the hundredthc place column, and it will return your value."""
 
 zero_column = [0.50000,
 0.53983,
