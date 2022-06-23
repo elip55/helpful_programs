@@ -1,6 +1,4 @@
 
-
-
 from all_lists import z_column, zero_column, one_column, two_column, three_column, four_column, five_column, six_column, seven_column, eight_column, nine_column
 
 from all_lists import z2, negOne, negTwo, negThree, negFour, negFive, negSix, negSeven, negEight, negNine
@@ -283,9 +281,3 @@ def neg_a9(x):
 
 """NOTE:  VERY IMPORTANT.  Remember that these functions return values LEFT OF the desired point.
     To find the area right of the desired point, simply subtract the value by 1."""
-
-
-v = area_calc_twos(1.7)
-print(v)
-v = neg_a2(-.1)
-print(v)
