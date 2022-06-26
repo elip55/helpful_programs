@@ -48,12 +48,3 @@ def p_higher(n,p,x):
     sol = sum(sum_list)
     print(f'The probability of {c} or higher is: {sol}')
 
-def basic_mean(n,p):
-
-    mean = n*p
-    standard_dev_unit = n*p*(1-p)
-    standard_deviation = math.sqrt(standard_dev_unit)
-    print(f'The mean is: {mean}')
-    print(f'The standard deaviation is: {standard_deviation}')
-
-

@@ -1,29 +1,6 @@
 
 
-
 import math
-import statistics
-# this file computes mean, sample variance, standard deviation, and correlation coeficient
-
-def calc(numbers):
-    """This function finds mean, sample variance, and standard deviation through input lists"""
-    mean = sum(numbers)/len(numbers)
-    l1 = []
-    for i in numbers:
-        val = abs(i - mean)
-        val2 = val**2
-        l1.append(val2)
-    med =  statistics.median(l1)
-    sample_variance = sum(l1)/(len(l1)-1)
-    population_variance = sum(l1)/len(l1)
-    population_standard_deviation = math.sqrt(population_variance)
-    standard_deviation = math.sqrt(sample_variance)
-    print(f'mean: {mean}')
-    print(f'The median is: {med}\n')
-    print(f'The population variance is: {population_variance}')
-    print(f'The population standard deviation is: {population_standard_deviation}\n')
-    print(f'sample variance: {sample_variance}')
-    print(f'standard deviation: {standard_deviation}\n')
 
 
 def correlation_coefficient_and_equation(x, y):
@@ -62,7 +39,7 @@ def correlation_coefficient_and_equation(x, y):
     r = final_sum/(denom-1)
     b1 = r*(sy/sx)
     b0 = mean_y - (b1*mean_x)
-    print(f'The correleation coefficient is: {r}\n')
+    print(f'The correleation coefficient is: r = {r}\n')
     print(f'The regression line equation is: {round(b0,5)} + {round(b1,5)}x')
 
 def opposite_regression_equation(mean_x, mean_y, sx, sy, r):
@@ -70,5 +47,3 @@ def opposite_regression_equation(mean_x, mean_y, sx, sy, r):
     b1 = r*(sy/sx)
     b0 = mean_y - (b1*mean_x)
     print(f'The regression line equation is: {round(b0,5)} + {round(b1,5)}x')
-    
-# NOTE:  Must input lists, values and call functions here

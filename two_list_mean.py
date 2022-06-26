@@ -5,7 +5,7 @@
 import math
 
 def mean_mu_zip(x,y):
-    # from two lists, this will find mean, mu_x, and standard deviation
+    # from two lists, this will find mean, µx, and standard deviation ∑x
     zip_list = []
     sd_list = []
     for i,j in zip(x,y):
@@ -19,9 +19,9 @@ def mean_mu_zip(x,y):
         sd_list.append(v3)
     variance = sum(sd_list)
     standard_deviation = math.sqrt(variance)
-    print(f'MUx is: {mu_x}')
+    print(f'µx = {mu_x}')
     print(f'Variance is: {variance}')
-    print(f'Standiard Deviation is: {standard_deviation}')
+    print(f'∑x = {standard_deviation}')
 
 def find_one(x):
     # if you have a missing probabilty number in the distribution, use this function to find it
@@ -30,3 +30,16 @@ def find_one(x):
     sol = round(sol, 2)
     print(f'The missing number is : {sol}')
 
+v = [0,
+1,
+2,
+3,
+4]
+
+w = [0.3,
+0.2,
+0.2,
+0.2,
+0.1]
+
+mean_mu_zip(v,w)

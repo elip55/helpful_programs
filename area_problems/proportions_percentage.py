@@ -3,19 +3,22 @@
 
 import math
 
-def perc(mu,z,sigma):
+def percentile(mu,z,sigma):
     x = mu + z*sigma
-    print(x)
+    print(f'The percentile is: {x}')
 
 
 def prop(mu,x,sigma):
     z = (x-mu)/sigma
     print(z)
 
-
-def standard_dev_and_perc(sigma,n,x_bar,mu):
+def sd(sigma,n,x,mu):
     
-    standard_deviation = sigma/math.sqrt(n)
-    z = (x_bar-mu)/standard_deviation
-    print(f'The Standard Deviation is: {standard_deviation}')
-    print(f'Z = {z}')
+    sigma_x = sigma/math.sqrt(n)
+    z_bar = (x-mu)/sigma_x
+    z_score = (x-mu)/sigma
+    sigma = round(sigma,5)
+    z_bar = round(z_bar,5)
+    print(f'Standard deviation = {sigma_x}')
+    print(f'z = {z_bar}')
+    print(f'from z score, z = {z_score}')
