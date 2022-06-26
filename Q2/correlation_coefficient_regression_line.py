@@ -1,33 +1,12 @@
 
 
-
 import math
-import statistics
-# this file computes mean, sample variance, standard deviation, and correlation coeficient
-
-def calc(numbers):
-    """This function finds mean, sample variance, and standard deviation through input lists"""
-    mean = sum(numbers)/len(numbers)
-    l1 = []
-    for i in numbers:
-        val = abs(i - mean)
-        val2 = val**2
-        l1.append(val2)
-    med =  statistics.median(l1)
-    sample_variance = sum(l1)/(len(l1)-1)
-    population_variance = sum(l1)/len(l1)
-    population_standard_deviation = math.sqrt(population_variance)
-    standard_deviation = math.sqrt(sample_variance)
-    print(f'mean: {mean}')
-    print(f'The median is: {med}\n')
-    print(f'The population variance is: {population_variance}')
-    print(f'The population standard deviation is: {population_standard_deviation}\n')
-    print(f'sample variance: {sample_variance}')
-    print(f'standard deviation: {standard_deviation}\n')
 
 
-def correlation_coefficient_and_equation(x, y):
+def correlation_coefficient_and_equation(x, y, diff_option1, diff_option2):
     """This function finds the correleation coeficient and regression line through input lists"""
+    """diff_option1 refers to the question that asks you to predict two different entities"""
+    """diff_option2 refers to the question that asks you to predict one entity over two differnt times"""
     denom = len(x) # this shouldn't matter as all lists should be equal
     mean_x = sum(x)/len(x)
     lx1 = []
@@ -62,13 +41,16 @@ def correlation_coefficient_and_equation(x, y):
     r = final_sum/(denom-1)
     b1 = r*(sy/sx)
     b0 = mean_y - (b1*mean_x)
-    print(f'The correleation coefficient is: {r}\n')
+    print(f'The correleation coefficient is: r = {r}\n')
     print(f'The regression line equation is: {round(b0,5)} + {round(b1,5)}x')
-
+    if diff_option1 > 0:
+        sol = b1*diff_option1
+        print(f'The amount would differ by: {sol}')
+    if diff_option2 > 0 :
+        sol1 = b0 + b1*diff_option2
+        print(f'The amount would differ by: {sol1}')
 def opposite_regression_equation(mean_x, mean_y, sx, sy, r):
     """When given the variables, this will output the regression line equation"""
     b1 = r*(sy/sx)
     b0 = mean_y - (b1*mean_x)
     print(f'The regression line equation is: {round(b0,5)} + {round(b1,5)}x')
-    
-# NOTE:  Must input lists, values and call functions here

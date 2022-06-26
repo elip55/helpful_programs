@@ -2,8 +2,15 @@
 from cmath import sqrt
 import math
 
+
+
+
+"""The values are as follows, for all functions:
+    n = amount of subjects sampled
+    p = percentage in int
+    x = variable"""
 def p(n,p,x):
-    
+    p = p/100
     v = n-x
     p1 = math.factorial(n) / (math.factorial(x)*math.factorial(v))
     p2 = p**x
@@ -18,22 +25,8 @@ def p(n,p,x):
     print(f'The standard deviation is: {standard_devation}')
 
 
-def p_lower(n,p,x):
-
-    sum_list = []
-    for i in range(x+1):
-        v = n-i
-        p1 = math.factorial(n) / (math.factorial(i)*math.factorial(v))
-        p2 = p**i
-        p3 = (1-p)**(n-i)
-        P = p1*p2*p3
-        sum_list.append(P)
-    sol = sum(sum_list)
-    print(f'The probability of {x} or lower is: {sol}')
-
 def p_higher(n,p,x):
-    # be mindful of the question
-    # since i add +1 to x, be cautious of initial value
+    p = p/100
     c = x
     sum_list = []
     for i in range(n-x):
@@ -48,12 +41,20 @@ def p_higher(n,p,x):
     sol = sum(sum_list)
     print(f'The probability of {c} or higher is: {sol}')
 
-def basic_mean(n,p):
+def p_lower(n,p,x):
 
-    mean = n*p
-    standard_dev_unit = n*p*(1-p)
-    standard_deviation = math.sqrt(standard_dev_unit)
-    print(f'The mean is: {mean}')
-    print(f'The standard deaviation is: {standard_deviation}')
+    p = p/100
+    sum_list = []
+    for i in range(x):
+        v = n-i
+        p1 = math.factorial(n) / (math.factorial(i)*math.factorial(v))
+        p2 = p**i
+        p3 = (1-p)**(n-i)
+        P = p1*p2*p3
+        sum_list.append(P)
+    sol = sum(sum_list)
+    print(f'The probability of {x} or lower is: {sol}')
 
+# NOTE:  If you're getting an error, check that your input is in the correct order
 
+p(10,41,10)
