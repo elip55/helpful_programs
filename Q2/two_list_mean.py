@@ -29,17 +29,3 @@ def find_one(x):
     sol = 1 - v
     sol = round(sol, 2)
     print(f'The missing number is : {sol}')
-
-v = [0,
-1,
-2,
-3,
-4]
-
-w = [0.3,
-0.2,
-0.2,
-0.2,
-0.1]
-
-mean_mu_zip(v,w)
