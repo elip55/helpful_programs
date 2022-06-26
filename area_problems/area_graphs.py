@@ -2,8 +2,11 @@
 from all_lists import z_column, zero_column, one_column, two_column, three_column, four_column, five_column, six_column, seven_column, eight_column, nine_column
 
 from all_lists import z2, negOne, negTwo, negThree, negFour, negFive, negSix, negSeven, negEight, negNine
-    
-    
+
+from proportions_percentage import perc, prop, standard_dev_and_perc
+
+import math
+
 """NOTE:  VERY IMPORTANT!!!!!!!  calc_n refers to the hundredths place columns. 
     So, calc_zeros = .00, calc_ones = .01,  calc_twos = .02, and so on.  
     So, simply input the number UP TO the hundredths place number, call the function of the hundredthc place column, and it will return your value."""
