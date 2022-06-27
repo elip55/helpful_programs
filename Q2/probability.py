@@ -9,7 +9,7 @@ import math
     n = amount of subjects sampled
     p = percentage in int
     x = variable"""
-def p(n,p,x):
+def p_exact(n,p,x):
     p = p/100
     v = n-x
     p1 = math.factorial(n) / (math.factorial(x)*math.factorial(v))
@@ -57,4 +57,7 @@ def p_lower(n,p,x):
 
 # NOTE:  If you're getting an error, check that your input is in the correct order
 
-p(10,41,10)
+"""The values are as follows, for all functions:
+    n = amount of subjects sampled
+    p = percentage in int
+    x = variable"""

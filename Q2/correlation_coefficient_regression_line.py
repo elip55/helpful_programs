@@ -5,8 +5,8 @@ import math
 
 def correlation_coefficient_and_equation(x, y, diff_option1, diff_option2):
     """This function finds the correleation coeficient and regression line through input lists"""
-    """diff_option1 refers to the question that asks you to predict two different entities"""
-    """diff_option2 refers to the question that asks you to predict one entity over two differnt times"""
+    """diff_option1 refers to the question that asks you to predict two different variables"""
+    """diff_option2 refers to the question that asks you to predict one variable over two differnt 'things'"""
     denom = len(x) # this shouldn't matter as all lists should be equal
     mean_x = sum(x)/len(x)
     lx1 = []
@@ -54,3 +54,7 @@ def opposite_regression_equation(mean_x, mean_y, sx, sy, r):
     b1 = r*(sy/sx)
     b0 = mean_y - (b1*mean_x)
     print(f'The regression line equation is: {round(b0,5)} + {round(b1,5)}x')
+
+
+
+# call functions below

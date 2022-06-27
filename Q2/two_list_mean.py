@@ -3,6 +3,7 @@
 
 
 import math
+from statistics import mean
 
 def mean_mu_zip(x,y):
     # from two lists, this will find mean, µx, and standard deviation ∑x
