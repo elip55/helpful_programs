@@ -1,7 +1,7 @@
 
 
 import math
-from z_list_from_tdistribution import z_dict
+from lists import z_dict
 
 def point_estimate_standard_error(x,n):
     global se
