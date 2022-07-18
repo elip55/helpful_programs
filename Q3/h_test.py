@@ -1,14 +1,27 @@
 
 
 
+from cmath import phase
 import math
+from os import P_ALL
 from lists import left,right, two_tail
 
-"""NOTE:  You will have to refer back to 'area_graphs' to find p value"""
+"""NOTE:  You will have to refer back to 'area_graphs' in Q2 to find p value"""
 
 
+def sample_proportion(x,n):
+    phat = x/n
+    return phat
 
-def two_tailed(h0,h1,n,x,sigma,alpha1,alpha2):
+def calc_from_p(h0,n,p):
+    nom1 = p-h0
+    nom2 = h0*(1-h0)
+    denom = math.sqrt(nom2/n)
+    z = nom1/denom
+    print(z)
+    
+
+def two_tailed(h0,n,x,sigma,alpha1,alpha2):
     xbar = sigma/math.sqrt(n)
     nom = x - h0
     z = nom/xbar
@@ -62,16 +75,4 @@ def htest(h0,h1,n,x,sigma, alpha1, alpha2):
 
 # for this program, if h1 > h0  or h1 < h0, NOTE: make h1 = h0
 # the program will compute the rest
-
-h0 = 54
-h1 = 69.4
-n = 61
-sigma = 10
-x = 51
-a1 = 0.01
-a2 = 0.01
-htest(h0,h1,n,x,sigma,a1,a2)
-
-
-
 

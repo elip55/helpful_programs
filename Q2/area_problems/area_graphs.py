@@ -343,5 +343,3 @@ def neg_a9(x):
 
 """NOTE:  VERY IMPORTANT.  Remember that these functions return values LEFT OF the desired point.
     To find the area right of the desired point, simply subtract the value by 1."""
-neg_a4(-2.3)
-area_calc_fours(2.3)
