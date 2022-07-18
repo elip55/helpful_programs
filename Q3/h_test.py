@@ -1,11 +1,8 @@
 
 
 
-from cgi import test
-from cmath import phase
-from lib2to3.pgen2.literals import simple_escapes
 import math
-from os import P_ALL
+
 from lists import left,right, two_tail
 
 """NOTE:  You will have to refer back to 'area_graphs' in Q2 to find p value"""
@@ -49,12 +46,24 @@ def sample_proportion(x,n):
     phat = x/n
     return phat
 
-def test_statistic(x1,x2,mu1,mu2,s1,s2,n1,n2):
+def pooled_proportion(x1,x2,n1,n2):
+    phat = (x1+x2)/(n1+n2)
+    return phat
+
+def test_statistict_t(x1,x2,mu1,mu2,s1,s2,n1,n2):
     nom = (x1-x2)-(mu1-mu2)
     insquare = (s1**2/n1)+(s2**2/n2)
     denom = math.sqrt(insquare)
     t = nom/denom
     print(f't = {t}')
+
+def test_statistic_z(p0,p1,p2,n1,n2):
+    nom = p1-p2 
+    para1 = p0*(1-p0)
+    para2 = (1/n1)+(1/n2)
+    denom = math.sqrt(para1*para2)
+    z = nom/denom
+    print(f'z = {z}')
 
 def two_tailed(h0,n,x,sigma,alpha1,alpha2):
     xbar = sigma/math.sqrt(n)
@@ -83,13 +92,9 @@ def two_tailed(h0,n,x,sigma,alpha1,alpha2):
 
 # for this program, if h1 > h0  or h1 < h0, NOTE: make h1 = h0
 # the program will compute the rest
-x1 = 3.7
-s1 = 5.67
-x2 = 2.1
-s2 = 4.71
-n1 = 61
-n2 = 63
-m1 =1
-m2=1
-test_statistic(x1,x2,m1,m2,s1,s2,n1,n2)
 
+
+p = pooled_proportion(45,22,337,88)
+p1 = sample_proportion(45,337)
+p2 = sample_proportion(22,88)
+test_statistic_z(p,p1,p2,337,88)
