@@ -343,3 +343,4 @@ def neg_a9(x):
 
 """NOTE:  VERY IMPORTANT.  Remember that these functions return values LEFT OF the desired point.
     To find the area right of the desired point, simply subtract the value by 1."""
+area_calc_twos(2.5)
