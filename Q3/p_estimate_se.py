@@ -29,11 +29,19 @@ def margin_of_error(perc):
     print(f'The low end interval is: {low_interval}')
     print(f'The high end interval is: {high_interval}')
 
-x = 50
-n = 119
-perc = 80
-point_estimate_standard_error(x,n)
-margin_of_error(perc)
+def confidence_interval(xbar,n,sigma, perc):
+    for i,j in z_dict.items():
+        if perc == i:
+            z = j
+    zalpha = z
+    margin_of_error = (z*sigma)/math.sqrt(n)
+    left = xbar - (zalpha*(sigma/math.sqrt(n)))
+    right = xbar + (zalpha*(sigma/math.sqrt(n)))
+    print(f'The margin of error is: {margin_of_error}')
+    print(f'The low end interval is: {left}')
+    print(f'The high end interval is: {right}')
+
+
 
 
 
