@@ -45,28 +45,9 @@ def t_stat_two_sample_simple_initiate(mu1,mu2,s1,s2,n1,n2):
 def t_stat_no_mean_initiate(x1,x2,n1,n2):
     test_statistic_z(x1,x2,n1,n2)
 
-def tlist_initiate(a,b,mu1,mu2):
-    test_statistict_tlist(a,b,mu1,mu2)
+def tlist_initiate(a,b,mu1):
+    test_statistict_tlist(a,b,mu1)
 
-a = [63.0,
-58.6,
-61.1,
-59.5,
-61.6,
-59.3,
-62.1,
-62.8,
-65.3,
-60.4]
-b = [68.5,
-63.9,
-65.8,
-64.5,
-66.3,
-64.2,
-67.1,
-68.1,
-69.9,
-66.7]
-tlist_initiate(a,b,0,0)
+print('REMEMBER IF ITS DOUBLE TAILED, ALPHA MUST BE DEVIDED BY 2!\n')
+
 

@@ -92,34 +92,28 @@ def test_statistict_two_samples(x1,x2,mu1,mu2,s1,s2,n1,n2):
     print(f't = {t}')
     print(f'Degrees of freedom are: {degrees_of_freedom}')
 
-def test_statistict_tlist(a,b,mu1,mu2):
-    n1 = len(a)
-    n2 = len(b)
-    x1 = sum(a)/len(a)
-    x2 = sum(b)/len(b)
-    s1list = []
-    s2list = []
+def test_statistict_tlist(a,b,mu):
+    n = len(a)
+    difference_list = []
     for i,j in zip(a,b):
-        val1 = abs(i-x1)
-        val1 = val1**2
-        s1list.append(val1)
-        val2 = abs(j-x2)
+        val1 = i-j
+        difference_list.append(val1)
+    mean_difference = sum(difference_list)/n
+    md2 = sum(difference_list)/n
+    mean_difference = abs(mean_difference)
+    numerator = mean_difference - mu
+    
+    sigma_list = []
+    for i in difference_list:
+        val2 = (i-md2)
         val2 = val2**2
-        s2list.append(val2)
-    sv1 = sum(s1list)/(len(s1list)-1)
-    sv2 = sum(s2list)/(len(s2list)-1)
-    s1 = math.sqrt(sv1)
-    s2 = math.sqrt(sv2)
-    nom = (x1-x2)-(mu1-mu2)
-    insquare = (s1**2/n1)+(s2**2/n2)
-    denom = math.sqrt(insquare)
-    t = nom/denom
-    if n1 < n2:
-        degrees_of_freedom = n1-1
-    else:
-        degrees_of_freedom = n2-1
+        sigma_list.append(val2)
+    sample_variance = sum(sigma_list)/(len(sigma_list)-1)
+    sd = math.sqrt(sample_variance)
+    denom = sd/math.sqrt(n)
+    t = numerator/denom
     print(f't = {t}')
-    print(f'Degrees of freedom are: {degrees_of_freedom}')
+    print(f'Degrees of fredom are: {n-1}')
 
 def test_statistic_z(x1,x2,n1,n2):
     p1 = x1/n1
